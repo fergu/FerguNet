@@ -1,0 +1,24 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#PageHeader {
+  font-family: 'Raleway', sans-serif;
+  font-size: 32pt;
+  padding: 5px;
+  background-color: FloralWhite;
+  text-align: center;
+}
+
+#BodyText {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12pt;
+  background-color: FloralWhite;
+  height: 100%;
+}
+
+subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 10pt;
+}
