@@ -40,16 +40,23 @@ html, body{
     float: left;
     margin-left: 5px;
     margin-right: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
+    background-color: #000;
+}
+
+#NavBar ul li.isActive {
+  background-color: grey;
+}
+
+#NavBar ul li.isInactive {
+  background-color: #000;
 }
 
 #NavBar li a {
     display: block;
+    position: relative;
     color: #FFF;
     padding: 8px;
     margin: 0;
-    width: 100%;
     transition: background-color 0.5s ease;
 }
 
