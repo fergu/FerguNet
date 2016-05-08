@@ -1,24 +1,77 @@
 html, body{
     margin: 0px;
     padding: 0px;
+    font-family: 'Raleway', sans-serif;
+    background-color: GhostWhite;
 }
 
 #PageHeader {
-  font-family: 'Raleway', sans-serif;
   font-size: 32pt;
-  padding: 5px;
-  background-color: FloralWhite;
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: left;
+  height: 10%;
+  position: relative;
+  top: 30px;
+}
+
+#NavBar {
   text-align: center;
+  height: 30px;
+  width: 100%;
+  min-height: 30px;
+  overflow: hidden;
+  background-color: #000;
+  color: #FFF;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+#NavBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#NavBar ul li {
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#NavBar li a {
+    display: block;
+    padding: 8px;
+    margin: 0;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+
+#NavBar li a:visited {
+  color: inherit;
+}
+#NavBar li a:hover {
+    background-color: grey;
 }
 
 #BodyText {
   font-family: 'Raleway', sans-serif;
   font-size: 12pt;
-  background-color: FloralWhite;
-  height: 100%;
+  height: 80%;
+  text-align: center;
 }
 
-subtitle {
+#Footer {
   font-family: 'Raleway', sans-serif;
   font-size: 10pt;
+  width: 100%;
+  height: 5%;
+  padding-bottom: 5px;
+  text-align: center;
+  position: relative;
 }
