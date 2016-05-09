@@ -1,6 +1,10 @@
-function fadeToText(id, text) {
+function setToText(id, textSrc) {
+    $(id).load(textSrc);
+}
+
+function fadeToText(id, textSrc) {
   $(id).animate({'opacity': 0}, 200, function () {
-    $(this).text(text);
+    $(this).load(textSrc);
   }).animate({'opacity': 1}, 200);
 }
 
@@ -20,26 +24,30 @@ window.onload = function() {
   var bodytext = document.getElementById("BodyText");
   var navlist = document.getElementById("NavList");
 
+  // This should default to setting the home link
+  setToText(bodytext,"./subpages/home.html")
+  selectLi(navlist,homelink.parentNode);
+
   homelink.onclick = function() {
-    fadeToText(bodytext,"Home Link Text!")
+    fadeToText(bodytext,"./subpages/home.html")
     selectLi(navlist,homelink.parentNode);
     return false;
   }
 
   aboutlink.onclick = function() {
-    fadeToText(bodytext,"About Link Text!");
+    fadeToText(bodytext,"./subpages/about.html");
     selectLi(navlist,aboutlink.parentNode);
     return false;
   }
 
   projectlink.onclick = function() {
-    fadeToText(bodytext,"Project Link Text!");
+    fadeToText(bodytext,"./subpages/projects.html");
     selectLi(navlist,projectlink.parentNode);
     return false;
   }
 
   contactlink.onclick = function() {
-    fadeToText(bodytext,"Contact Link Text!");
+    fadeToText(bodytext,"./subpages/contact.html");
     selectLi(navlist,contactlink.parentNode);
     return false;
   }
