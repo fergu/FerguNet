@@ -2,14 +2,22 @@
 	<body>
 			<h2><b>Physical Projects</b></h2>
 			<ul>
-				<li>Masters Thesis: 3D Imaging Apparatus</li>
+				<li>Masters Thesis: 3D Imaging Apparatus (August 2012 to May 2014)</li>
 				<ul>
-					<li>
-						This was created as part of my work on my Masters Thesis in Aerospace Engineering at the University of Arizona.<br>
-						The goal of the project was to design and implement a mechanism to capture the initial conditions of the <a href="https://en.wikipedia.org/wiki/Richtmyer–Meshkov_instability">Richtmyer-Meshkov fluid instability</a> (RMI) prior to shock wave arrival. The design presented several challenges. Specifically, the scan must be repeatable so that it can be accurately reconstructed, it must be fast so as to minimize temporal evoltion of the interface during the scan, and it must be able to withstand the power of the laser being passed through it. Additional project goals included flexibility in the scan width and duration, and ease of setup and calibration.<br>
-						This was ultimately accomplished using a device known as a <a href="https://en.wikipedia.org/wiki/Galvanometer">Galvanometer</a>. This is a device which responds to a current, rotating to a fixed, consistent position based on input current. The galvanometers use control boards which provide PID control, and accept a bipolar analog voltage as control input. This voltage was generated and controlled using an Arduino Mega combined with an 8 bit digital-to-analog converter (DAC). The DAC and its components reside on a circuit designed for this purpose. The communication between the digital output of the Mega and the input to the DAC is set up such that all of the output pins reside on one port of the Mega, allowing for simultanous assignment of the digital pins, eliminating effects from rise time associated with pin assignment.<br>
-						This apparatus was demonstrated successfully and used to capture several experiments, which were then used for computational simulations of the instability. Further improvements in the form of higher precision, faster response galvanometers and mirrors with coatings allowing the mirrors to be continuously exposed to laser light have further improved the output from this apparatus.
-					</li>
+					<li>Created as part of my work on my Masters Thesis in Aerospace Engineering at the University of Arizona.</li>
+					<li>Goal: design and implement a mechanism to capture the initial conditions of the <a href="https://en.wikipedia.org/wiki/Richtmyer–Meshkov_instability">Richtmyer-Meshkov fluid instability</a> (RMI) prior to shock wave arrival.</li>
+					<li>Accomplished using a device known as a <a href="https://en.wikipedia.org/wiki/Galvanometer">Galvanometer</a> with attached mirrors, combined with an Arduino Mega and 8-bit DAC with custom-designed PCB for current control.</li>
+					<li>Demonstrated successfully and used to capture several experiments, which were then used for computational simulations of the instability.</li>
+					<li>Subsequent improvements in the form of faster galvanometers and better mirror coatings have further improved results.</li>
+				</ul>
+				<li>Senior Capstone Design: Joined Wing UAV (August 2011 to May 2012)</li>
+				<ul>
+					<li>Created to satisfy requirements of the senior capstone design project, required for graduation from the University of Arizona's Aerospace Engineering program</li>
+					<li>Chief Responsibilities: Team Lead and Aircraft Aerodynamic Design and planform sizing</li>
+					<li>Goal: Design and construct an unmanned aerial vehicle with a <a href="https://en.wikipedia.org/wiki/Closed_wing">Joined Wing</a> design, featuring a continuous loop between the primary and secondary lifting surfaces</li>
+					<li>Advantages include reduced structual weight, additional payload capacity, and greater aerodynamic efficiency due to reduction of trailing vorticies</li>
+					<li>Successfully designed, built, and flight tested. Initial measurements agree with expected aerodynamic performance</li>
+					<li>Improvements to be made in the form of additional motors, as well as refined winglet and structural design to reduce drag and weight</li>
 				</ul>
 			</ul>
 	</body>
