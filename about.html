@@ -2,12 +2,10 @@
 	<title>FerguNet</title>
 	<head>
 		<link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
-		<link href='main.css' rel='stylesheet' type='text/css'>
+		<link href='css/main.css' rel='stylesheet' type='text/css'>
+		<script src='js/main.js'></script>
 	</head>
 	<body>
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 
 	<div id='NavBar'>
 		<ul id='NavList'>
@@ -21,11 +19,23 @@
 	</div>
 
 	<div id='BodyText'>
+		<div class='resume-section'>
+			<div class='resume-section-handle' onclick='toggle_section(this.parentElement)'>
+				<button>
+					<span class='vert'></span>
+					<span class='horz'></span>
+				</button>
+				Education
+			</div>
+			<div class='resume-section-content'>
+				This is my education
+			</div>
+		</div>
 		Kevin Ferguson is a Ph.D student at the University of Arizona, and generally awesome.
 	</div>
 
 	<div id='Footer'>
-			Created by Kevin Ferguson 2016. All Rights Reserved.
+			Created by Kevin Ferguson 2021. All Rights Reserved.
 	</div>
 	</body>
 </html>
