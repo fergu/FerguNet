@@ -24,7 +24,7 @@ html, body{
 	line-height: 1em;
 }
 
-.resume-section .resume-section-handle button {
+.resume-section .resume-section-handle .resume-handle-button {
 	width: 1em;
 	height: 1em;
 	font-size: inherit;
@@ -34,27 +34,28 @@ html, body{
 	outline: 0;
 	margin-right: 12px;
 	position: relative;
+	background-color: grey;
 }
 
-.resume-section .resume-section-handle button span {
+.resume-section .resume-section-handle .resume-handle-button span {
 	position: absolute;
 	background: white;
 	transition: 200ms;
 	border-radius: 2px;
 }
 
-.resume-section.open .resume-section-handle button span {
+.resume-section.open .resume-section-handle .resume-handle-button span {
 	transform: rotate(45deg);
 }
 
-.resume-section .resume-section-handle button span.vert {
+.resume-section .resume-section-handle .resume-handle-button span.vert {
 	top: 25%;
 	bottom: 25%;
 	width: 10%;
 	left: 45%;
 }
 
-.resume-section .resume-section-handle button span.horz {
+.resume-section .resume-section-handle .resume-handle-button span.horz {
 	left: 25%;
 	right: 25%;
 	height: 10%;
