@@ -39,7 +39,7 @@ html, body{
 
 .resume-section .resume-section-handle .resume-handle-button span {
 	position: absolute;
-	background: white;
+	background: blue;
 	transition: 200ms;
 	border-radius: 2px;
 }
