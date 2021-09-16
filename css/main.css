@@ -5,6 +5,19 @@ html, body{
     background-color: GhostWhite;
 }
 
+.resume-section-split {
+	width: 100%;
+	display: flex;
+}
+.resume-section-split-left {
+	width: 15%;
+	border-right: 1px solid grey;
+}
+.resume-section-split-right {
+	padding-left: 1em;
+	flex: 1;
+}
+
 .resume-section .resume-section-handle {
 	font-size: 14pt;
 	display: flex;
