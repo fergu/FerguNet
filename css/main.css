@@ -34,7 +34,7 @@ html, body{
 	outline: 0;
 	margin-right: 12px;
 	position: relative;
-	background-color: grey;
+	background-color: red;
 }
 
 .resume-section .resume-section-handle .resume-handle-button span {
