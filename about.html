@@ -3,22 +3,24 @@
 	<head>
 		<link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
 		<link href='css/main.css' rel='stylesheet' type='text/css'>
+		<link href='css/resume.css' rel='stylesheet' type='text/css'>
 		<script src='js/main.js'></script>
 	</head>
 	<body>
 
-	<div id='NavBar'>
-		<ul id='NavList'>
-			<li class="isInactive"><a href="./home.html">FERGU.NET</a></li>
-			<li class="isInactive">//</li>
-			<li class="isActive"><a href="./about.html">About</a></li>
-			<li class="isInactive"><a href="http://github.fergu.net" target="_blank">Github</a></li>
-			<li class="isInactive"><a href="./projects.html">Projects</a></li>
-			<li class="isInactive"><a href="./contact.html">Contact</a></li>
+	<div id='body-text'>
+	<div id='body-left'>
+		<h1>./fergu.net</h1>
+		<h6>Homepage of Kevin Ferguson</h6>
+		<hr>
+		<ul>
+			<li><a href="./about.html">About</a></li>
+			<li><a href="http://github.fergu.net" target="_blank">Github</a></li>
+			<li><a href="./projects.html">Projects</a></li>
+			<li><a href="./contact.html">Contact</a></li>
 		</ul>
 	</div>
-
-	<div id='BodyText'>
+	<div id='body-right'>
 		<h1>Resume</h1>
 		<div class='resume-section'>
 			<div class='resume-section-handle' onclick='toggle_section(this.parentElement)'>
@@ -77,13 +79,62 @@
 				<div class='resume-section-title'>Research and Technical Experience (Post-Graduate)</div>
 			</div>
 			<div class='resume-section-content'>
-				<u>Fluid Mechanics and Instability Laboratory - Dr. Jeffrey Jacobs</u><br>
-				<br>
-				<u>Lawrence-Livermore National Laboratory - Dr. Jeffrey Greenough</u><br>
-				<br>
-				<u>Applied Aerodynamics Research Group - Dr. Sven Schmitz</u><br>
-				<br>
-				<u>Fluid Mechanics and Instability Laboratory - Dr. Jeffrey Jacobs</u><br>
+				<div class='resume-section-split'>
+					<div class='resume-section-split-left'>
+						January 2016 - <br>Present
+					</div>
+					<div class='resume-section-split-right'>
+						<u>Fluid Mechanics and Instability Laboratory - Dr. Jeffrey Jacobs</u><br>
+						<i>Graduate Research Assistant, The University of Arizona</i><br>
+						Work includes the design and construction of a Dual-Shock Vertical Shock Tube (DSVST), and performing experiments on the Richtmyer-Meshkov Instability in the DSVST utilizing multiple imaging diagnostics.<br>
+					</div>
+				</div><hr>
+				<div class='resume-section-split'>
+					<div class='resume-section-split-left'>
+						May 2016 - <br>August 2016
+					</div>
+					<div class='resume-section-split-right'>
+						<u>Lawrence-Livermore National Laboratory - Dr. Jeffrey Greenough</u><br>
+						<i>Summer Student Scholar</i><br>
+						Performed simulations of the Richtmyer-Meshkov Instability with experimentally measured initial conditions using the ARES CFD code. Information on instability growth was extracted using VisIt software, and compared to model predictions and experimental results.<br>
+					</div>
+				</div><hr>
+				<div class='resume-section-split'>
+					<div class='resume-section-split-left'>
+						August 2014 - <br>September 2015
+					</div>
+					<div class='resume-section-split-right'>
+						<u>Applied Aerodynamics Research Group - Dr. Sven Schmitz</u><br>
+						<i>Graduate Research Assistant, The Pennsylvania State University</i><br>
+						Implemented computational genetic algorithm optimization routines in parallel for use with RCAS analysis software. Implementation utilized to determine optimal scheduling of active devices on rotorcraft for power requirement reduction.<br>
+					</div>
+				</div><hr>
+				<div class='resume-section-split'>
+					<div class='resume-section-split-left'>
+						August 2012 - <br>May 2014
+					</div>
+					<div class='resume-section-split-right'>
+						<u>Fluid Mechanics and Instability Laboratory - Dr. Jeffrey Jacobs</u><br>
+						<i>Graduate Research Assistant, The University of Arizona</i><br>
+						Designed and implemented a system to image the initial perturbations in Richtmyer-Meshkov fluid instabilities in three dimensions and generate information useful to improving CFD models and enhance understanding about the factors influencing instability growth.<br>
+					</div>
+				</div><hr>
+			</div>
+		</div>
+		<br>
+		<div class='resume-section' id="Technical Skills">
+			<div class='resume-section-handle' onclick='toggle_section(this.parentElement)'>
+				<div class='resume-handle-button'>
+					<span class='vert'></span>
+					<span class='horz'></span>
+				</div>
+				<div class='resume-section-title'>Technical Skills</div>
+			</div>
+			<div class='resume-section-content'>
+				<ul>
+					<li>Various programming languages, including Julia, Python, C, C++, Cocoa, Swift, Matlab, HTML, and Javascript</li>
+					<li>Some other stuff here</li>
+					<li>Sometimes I even know what I'm doing</li>
 			</div>
 		</div>
 		<br>
@@ -93,7 +144,7 @@
 					<span class='vert'></span>
 					<span class='horz'></span>
 				</div>
-				<div class='resume-section-title'>Technical Skills</div>
+				<div class='resume-section-title'>Research Interests</div>
 			</div>
 			<div class='resume-section-content'>
 				
@@ -126,9 +177,8 @@
 			</div>
 		</div>
 	</div>
-
-	<div id='Footer'>
-			Created by Kevin Ferguson 2021. All Rights Reserved.
+	</div>
+	<div id='footer'>
 	</div>
 	</body>
 </html>

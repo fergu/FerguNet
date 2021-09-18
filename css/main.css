@@ -5,134 +5,65 @@ html, body{
     background-color: GhostWhite;
 }
 
-.resume-section-split {
-	width: 100%;
+#body-text {
 	display: flex;
-}
-.resume-section-split-left {
-	width: 15%;
-	border-right: 1px solid grey;
-}
-.resume-section-split-right {
-	padding-left: 1em;
-	flex: 1;
+	font-size: 1em;
+	left: 0; right: 0;
+	padding: 0.7em;
+	text-align: left;
+	overflow-y: scroll;
 }
 
-.resume-section .resume-section-handle {
-	font-size: 14pt;
-	display: flex;
-	line-height: 1em;
+#body-left {
+	left: 0;
+	top: 0;
+	width: 20%;
+	border-right: 2px grey solid;
+	padding-right: 1em;
+	
 }
 
-.resume-section .resume-section-handle .resume-handle-button {
-	width: 1em;
-	min-width: 1em;
-	height: 1em;
-	min-height: 1em;
-	font-size: inherit;
-	border-radius: 3px;
-	cursor: pointer;
-	border: 0;
-	outline: 0;
-	margin-right: 12px;
-	position: relative;
-	background-color: gray;
+#body-left h1,h2,h3,h4,h5,h6 {
+	margin: 0;
 }
 
-.resume-section .resume-section-handle .resume-handle-button span {
-	position: absolute;
-	background: white;
-	transition: 200ms;
-	border-radius: 2px;
-}
-
-.resume-section.open .resume-section-handle .resume-handle-button span {
-	transform: rotate(45deg);
-}
-
-.resume-section .resume-section-handle .resume-handle-button span.vert {
-	top: 25%;
-	bottom: 25%;
-	width: 10%;
-	left: 45%;
-}
-
-.resume-section .resume-section-handle .resume-handle-button span.horz {
-	left: 25%;
-	right: 25%;
-	height: 10%;
-	top: 45%;
-}
-
-
-.resume-section .resume-section-content {
-	height: 0;
-	overflow-y: hidden;
-	padding-left: 4em;
-}
-
-.resume-section.open .resume-section-content {
-	height: auto;
-}
-
-#NavBar {
-  font-size: 1em;
-  text-align: center;
-  height: 2.2em;
-  min-height: 2.2em;
-  left: 0; right: 0;
-  background-color: #000;
-  color: #FFF;
-  position: fixed;
-  top: 0;
-  z-index: 999;
-}
-
-#NavBar ul {
+#body-left ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-#NavBar ul li {
-    float: left;
+#body-left ul li {
     margin-left: 0.2em;
     margin-right: 0.2em;
-    background-color: #000;
-    color: #FFF;
     padding: 0.5em;
+	transition: 0.25s;
 }
 
-#NavBar ul li:hover {
-  background-color: blue;
+#body-left ul li:hover {
+  background-color: #9e9e9e;
 }
 
-#NavBar ul li.isActive {
-  background-color: grey;
-}
-
-#NavBar ul li.isInactive {
-  background-color: #000;
-}
-
-#NavBar li a {
-    display: block;
+#body-left li a {
     position: relative;
+	text-decoration: none;
+	text: bold;
+	font-weight: bold;
 }
 
-#NavBar li a:visited {
+#body-left li a:visited {
   color: inherit;
 }
 
-#BodyText {
-  font-size: 1em;
-  left: 0; right: 0;
-  padding: 0.7em;
-  text-align: left;
-  position: absolute;
-  top: 2em;
-  bottom: 1.3em;
-  overflow-y: scroll;
+#body-right {
+	flex: 1;
+	padding-left: 1em;
+}
+
+#body-right h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	margin-bottom: 0.25em;
+	padding: 0;
 }
 
 #Footer {
@@ -142,6 +73,4 @@ html, body{
   min-height: 1.3em;
   padding: 0.3em;
   text-align: center;
-  position: absolute;
-  bottom: 0;
 }
