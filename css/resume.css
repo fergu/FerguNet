@@ -1,3 +1,14 @@
+#resume {
+	list-style-type: none;	
+	padding: 0;
+	margin: 0;
+}
+
+#resume li {
+	padding: 0.5em;
+	margin: 0.5em;
+}
+
 .resume-section-split {
 	width: 100%;
 	display: flex;
@@ -6,19 +17,20 @@
 	width: 15%;
 	border-right: 1px solid grey;
 	text-align: center;
+	padding-right: 0.25em;
 }
 .resume-section-split-right {
 	padding-left: 1em;
 	flex: 1;
 }
 
-.resume-section .resume-section-handle {
+.resume-section-handle {
 	font-size: 14pt;
 	display: flex;
 	line-height: 1em;
 }
 
-.resume-section .resume-section-handle .resume-handle-button {
+.resume-handle-button {
 	width: 1em;
 	min-width: 1em;
 	height: 1em;
@@ -33,25 +45,25 @@
 	background-color: gray;
 }
 
-.resume-section .resume-section-handle .resume-handle-button span {
+.resume-handle-button span {
 	position: absolute;
 	background: white;
 	transition: 200ms;
 	border-radius: 2px;
 }
 
-.resume-section.open .resume-section-handle .resume-handle-button span {
+.resume-section.open .resume-handle-button span {
 	transform: rotate(45deg);
 }
 
-.resume-section .resume-section-handle .resume-handle-button span.vert {
+.resume-handle-button span.vert {
 	top: 25%;
 	bottom: 25%;
 	width: 10%;
 	left: 45%;
 }
 
-.resume-section .resume-section-handle .resume-handle-button span.horz {
+.resume-handle-button span.horz {
 	left: 25%;
 	right: 25%;
 	height: 10%;
@@ -59,7 +71,7 @@
 }
 
 
-.resume-section .resume-section-content {
+.resume-section-content {
 	height: 0;
 	overflow-y: hidden;
 	padding-left: 4em;

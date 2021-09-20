@@ -9,68 +9,21 @@ html, body{
 	display: flex;
 	font-size: 1em;
 	left: 0; right: 0;
-	padding: 0.7em;
+	bottom: 0;
+	min-height: calc(100% - 1.4em);
+	margin: 0.7em;
 	text-align: left;
-	overflow-y: scroll;
-}
-
-#body-left {
-	left: 0;
-	top: 0;
-	width: 20%;
-	border-right: 2px grey solid;
-	padding-right: 1em;
-	
-}
-
-#body-left h1,h2,h3,h4,h5,h6 {
-	margin: 0;
-}
-
-#body-left ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-#body-left ul li {
-    margin-left: 0.2em;
-    margin-right: 0.2em;
-    padding: 0.5em;
-	transition: 0.25s;
-}
-
-#body-left ul li:hover {
-  background-color: #9e9e9e;
-}
-
-#body-left li a {
-    position: relative;
-	text-decoration: none;
-	text: bold;
-	font-weight: bold;
-}
-
-#body-left li a:visited {
-  color: inherit;
 }
 
 #body-right {
 	flex: 1;
 	padding-left: 1em;
+	left: 0;
+	top: 0;
 }
 
 #body-right h1,h2,h3,h4,h5,h6 {
 	margin: 0;
-	margin-bottom: 0.25em;
-	padding: 0;
+	padding-bottom: 0.5em;
 }
 
-#Footer {
-  font-size: 0.8em;
-  left: 0; right: 0;
-  height: 1.3em;
-  min-height: 1.3em;
-  padding: 0.3em;
-  text-align: center;
-}
