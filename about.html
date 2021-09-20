@@ -3,7 +3,7 @@
 	<head>
 		<link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
 		<link href='css/main.css' rel='stylesheet' type='text/css'>
-		<link href='css/resume.css' rel='stylesheet' type='text/css'>
+		<link href='css/block-sections.css' rel='stylesheet' type='text/css'>
 		<link href='css/navbar.css' rel='stylesheet' type='text/css'>
 		<script src='js/main.js'></script>
 	</head>
@@ -13,21 +13,21 @@
 	<div id='nav-bar'></div>
 	<div id='body-right'>
 		<h1>Resume</h1>
-		<ul id='resume'>
-			<li class='resume-section'>
-				<div class='resume-section-handle' onclick='toggle_section(this.parentElement)'>
-					<div class='resume-handle-button'>
+		<ul class='block-section-root'>
+			<li class='block-section'>
+				<div class='section-handle' onclick='toggle_section(this.parentElement)'>
+					<div class='section-handle-button'>
 						<span class='vert'></span>
 						<span class='horz'></span>
 					</div>
-					<div class='resume-section-title'>Education</div>
+					<div class='section-title'>Education</div>
 				</div>
-				<div class='resume-section-content'>
-					<div class='resume-section-split'>
-						<div class='resume-section-split-left'>
+				<div class='section-content'>
+					<div class='section-split'>
+						<div class='section-split-left'>
 							January 2016 - <br>May 2022 (Expected)
 						</div>
-						<div class='resume-section-split-right'>
+						<div class='section-split-right'>
 							<u>Doctor of Philosophy, Aerospace Engineering, Emph. Fluid Mechanics</u><br>
 							<u>Ph.D Minor in Applied Mathematics</u><br>
 							<u>Advisor: Dr. Jeffrey Jacobs</u><br>
@@ -36,11 +36,11 @@
 							Dissertation Title: <i>Experiments on the Richtmyer-Meshkov Instability in Reshock</i><br>
 						</div>
 					</div><hr>
-					<div class='resume-section-split'>
-						<div class='resume-section-split-left'>
+					<div class='section-split'>
+						<div class='section-split-left'>
 							August 2012 - <br>May 2014
 						</div>
-						<div class='resume-section-split-right'>
+						<div class='section-split-right'>
 							<u>Masters of Science, Aerospace Engineering, Emph. Fluid Mechanics</u><br>
 							<u>Advisor: Dr. Jeffrey Jacobs</u><br>
 							The University of Arizona, Tucson, Arizona, USA<br>
@@ -48,11 +48,11 @@
 							Thesis Title: <i>Three-Dimensional Imaging and Characterization of Random Initial Perturbations on a Gas-Gas Interface</i><br>
 						</div>
 					</div><hr>
-					<div class='resume-section-split'>
-						<div class='resume-section-split-left'>
+					<div class='section-split'>
+						<div class='section-split-left'>
 							August 2007 - <br>May 2012
 						</div>
-						<div class='resume-section-split-right'>
+						<div class='section-split-right'>
 							<u>Bachelor of Science, Aerospace Engineering</u><br>
 							GPA: 3.343/4.000<br>
 							The University of Arizona, Tucson, Arizona, USA<br>
@@ -61,40 +61,40 @@
 					</div><hr>
 				</div>
 			</li>
-			<li class='resume-section'>
-				<div class='resume-section-handle' onclick='toggle_section(this.parentElement)'>
-					<div class='resume-handle-button'>
+			<li class='block-section'>
+				<div class='section-handle' onclick='toggle_section(this.parentElement)'>
+					<div class='section-handle-button'>
 						<span class='vert'></span>
 						<span class='horz'></span>
 					</div>
-					<div class='resume-section-title'>Research and Technical Experience (Post-Graduate)</div>
+					<div class='section-title'>Research and Technical Experience (Post-Graduate)</div>
 				</div>
-				<div class='resume-section-content'>
-					<div class='resume-section-split'>
-						<div class='resume-section-split-left'>
+				<div class='section-content'>
+					<div class='section-split'>
+						<div class='section-split-left'>
 							January 2016 - <br>Present
 						</div>
-						<div class='resume-section-split-right'>
+						<div class='section-split-right'>
 							<u>Fluid Mechanics and Instability Laboratory - Dr. Jeffrey Jacobs</u><br>
 							<i>Graduate Research Assistant, The University of Arizona</i><br>
 							Work includes the design and construction of a Dual-Shock Vertical Shock Tube (DSVST), and performing experiments on the Richtmyer-Meshkov Instability in the DSVST utilizing multiple imaging diagnostics.<br>
 						</div>
 					</div><hr>
-					<div class='resume-section-split'>
-						<div class='resume-section-split-left'>
+					<div class='section-split'>
+						<div class='section-split-left'>
 							May 2016 - <br>August 2016
 						</div>
-						<div class='resume-section-split-right'>
+						<div class='section-split-right'>
 							<u>Lawrence-Livermore National Laboratory - Dr. Jeffrey Greenough</u><br>
 							<i>Summer Student Scholar</i><br>
 							Performed simulations of the Richtmyer-Meshkov Instability with experimentally measured initial conditions using the ARES CFD code. Information on instability growth was extracted using VisIt software, and compared to model predictions and experimental results.<br>
 						</div>
 					</div><hr>
-					<div class='resume-section-split'>
-						<div class='resume-section-split-left'>
+					<div class='section-split'>
+						<div class='section-split-left'>
 							August 2014 - <br>September 2015
 						</div>
-						<div class='resume-section-split-right'>
+						<div class='section-split-right'>
 							<u>Applied Aerodynamics Research Group - Dr. Sven Schmitz</u><br>
 							<i>Graduate Research Assistant, The Pennsylvania State University</i><br>
 							Implemented computational genetic algorithm optimization routines in parallel for use with RCAS analysis software. Implementation utilized to determine optimal scheduling of active devices on rotorcraft for power requirement reduction.<br>	
@@ -102,54 +102,54 @@
 					</div>
 				</div>
 			</li>
-			<li class='resume-section'>
-				<div class='resume-section-handle' onclick='toggle_section(this.parentElement)'>
-					<div class='resume-handle-button'>
+			<li class='block-section'>
+				<div class='section-handle' onclick='toggle_section(this.parentElement)'>
+					<div class='section-handle-button'>
 						<span class='vert'></span>
 						<span class='horz'></span>
 					</div>
-					<div class='resume-section-title'>Technical Skills</div>
+					<div class='section-title'>Technical Skills</div>
 				</div>
-				<div class='resume-section-content'>
+				<div class='section-content'>
 					<ul>
 						<li>Various programming languages, including Julia, Python, C, C++, Cocoa, Swift, Matlab, HTML, and Javascript</li>
 						<li>Some other stuff here</li>
 						<li>Sometimes I even know what I'm doing</li>
 				</div>
 			</li>
-			<li class='resume-section'>
-				<div class='resume-section-handle' onclick='toggle_section(this.parentElement)'>
-					<div class='resume-handle-button'>
+			<li class='block-section'>
+				<div class='section-handle' onclick='toggle_section(this.parentElement)'>
+					<div class='section-handle-button'>
 						<span class='vert'></span>
 						<span class='horz'></span>
 					</div>
-					<div class='resume-section-title'>Research Interests</div>
+					<div class='section-title'>Research Interests</div>
 				</div>
-				<div class='resume-section-content'>
+				<div class='section-content'>
 					
 				</div>
 			</li>
-			<li class='resume-section'>
-				<div class='resume-section-handle' onclick='toggle_section(this.parentElement)'>
-					<div class='resume-handle-button'>
+			<li class='block-section'>
+				<div class='section-handle' onclick='toggle_section(this.parentElement)'>
+					<div class='section-handle-button'>
 						<span class='vert'></span>
 						<span class='horz'></span>
 					</div>
-					<div class='resume-section-title'>Professional Societies</div>
+					<div class='section-title'>Professional Societies</div>
 				</div>
-				<div class='resume-section-content'>
+				<div class='section-content'>
 					
 				</div>
 			</li>
-			<li class='resume-section'>
-				<div class='resume-section-handle' onclick='toggle_section(this.parentElement)'>
-					<div class='resume-handle-button'>
+			<li class='block-section'>
+				<div class='section-handle' onclick='toggle_section(this.parentElement)'>
+					<div class='section-handle-button'>
 						<span class='vert'></span>
 						<span class='horz'></span>
 					</div>
-					<div class='resume-section-title'>Talks, Posters, and Publications</div>
+					<div class='section-title'>Talks, Posters, and Publications</div>
 				</div>
-				<div class='resume-section-content'>
+				<div class='section-content'>
 					
 				</div>
 			</li>

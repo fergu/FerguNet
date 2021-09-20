@@ -1,0 +1,88 @@
+.block-section-root {
+	list-style-type: none;	
+	padding: 0;
+	margin: 0;
+}
+
+.block-section-root li {
+	padding: 0.5em;
+	padding-left: 0;
+	margin: 0.5em;
+	margin-left: 0;
+}
+
+.section-split {
+	width: 100%;
+	display: flex;
+}
+.section-split-left {
+	width: 15%;
+	border-right: 1px solid grey;
+	text-align: center;
+	padding-right: 0.25em;
+}
+.section-split-right {
+	padding-left: 1em;
+	flex: 1;
+}
+
+.section-handle {
+	font-size: 14pt;
+	display: flex;
+	line-height: 1em;
+}
+
+.section-handle-button {
+	width: 1em;
+	min-width: 1em;
+	height: 1em;
+	min-height: 1em;
+	font-size: inherit;
+	border-radius: 3px;
+	cursor: pointer;
+	border: 0;
+	outline: 0;
+	margin-right: 12px;
+	position: relative;
+	background-color: gray;
+}
+
+.section-handle-button span {
+	position: absolute;
+	background: white;
+	transition: 200ms;
+	border-radius: 2px;
+}
+
+.block-section.open .section-handle-button span {
+	transform: rotate(45deg);
+}
+
+.section-handle-button span.vert {
+	top: 25%;
+	bottom: 25%;
+	width: 10%;
+	left: 45%;
+}
+
+.section-handle-button span.horz {
+	left: 25%;
+	right: 25%;
+	height: 10%;
+	top: 45%;
+}
+
+
+.section-content {
+	height: 0;
+	overflow-y: hidden;
+	padding-left: 4em;
+}
+
+.block-section.open .section-content {
+	height: auto;
+}
+
+.resume-section.open .resume-section-handle {
+	padding-bottom: 0.5em;
+}

@@ -2,7 +2,7 @@
 	left: 0;
 	top: 0;
 	width: 20%;
-	border-right: 2px grey solid;
+	border-right: 1px grey solid;
 	padding-right: 1em;
 	display: flex;
 	flex-direction: column;
