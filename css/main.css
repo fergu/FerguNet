@@ -24,6 +24,17 @@ html, body{
 
 #body-right h1,h2,h3,h4,h5,h6 {
 	margin: 0;
-	padding-bottom: 0.5em;
 }
 
+.body-title {
+	display: block;
+    position: relative;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	padding: 0.5em;
+}
+
+.body-content {
+
+}
