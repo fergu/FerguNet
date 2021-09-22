@@ -38,3 +38,34 @@ html, body{
 .body-content {
 
 }
+
+.body-title #named-span {
+	display: none;
+}
+
+#printer-button #printed-text {
+	display: none;
+}
+
+@media print {
+	html, body {
+		background-color: white;
+	}
+
+	#body-text {
+		font-size: 12pt;
+	}
+	.body-title #styled-span {
+		display: none;
+	}
+	.body-title #named-span {
+		display: inline;
+	}
+
+	#printer-button #print-button {
+		display: none;
+	}
+	#printer-button #printed-text {
+		display: inline;
+	}
+}

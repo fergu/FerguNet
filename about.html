@@ -12,7 +12,18 @@
 	<div id='body-text'>
 	<div id='nav-bar'></div>
 	<div id='body-right'>
-		<h1>Resume</h1>
+		<div class='body-title'>
+			<span id="styled-span">
+			<h1>./resume</h1>
+			<h6>All about my previous experience and future goals</h6>
+			</span>
+			<span id="named-span">
+				<h1>Kevin J. Ferguson</h1>
+				<h6>Engineer, soon-to-be-Ph.D (May 2021, expected)</h6>
+			</span>
+		</div>
+		<hr>
+		<div class='body-content'>
 		<ul class='block-section-root'>
 			<li class='block-section'>
 				<div class='section-handle' onclick='toggle_section(this.parentElement)'>
@@ -58,7 +69,7 @@
 							The University of Arizona, Tucson, Arizona, USA<br>
 							Senior Design Project: <i>Design and construction of a joined-wing UAV</i><br>
 						</div>
-					</div><hr>
+					</div>
 				</div>
 			</li>
 			<li class='block-section'>
@@ -77,7 +88,7 @@
 						<div class='section-split-right'>
 							<u>Fluid Mechanics and Instability Laboratory - Dr. Jeffrey Jacobs</u><br>
 							<i>Graduate Research Assistant, The University of Arizona</i><br>
-							Work includes the design and construction of a Dual-Shock Vertical Shock Tube (DSVST), and performing experiments on the Richtmyer-Meshkov Instability in the DSVST utilizing multiple imaging diagnostics.<br>
+							Work includes the design and construction of a Dual-Driver Vertical Shock Tube (DDVST). Experiments conducted include high-resolution, high-speed studies of the Richtmyer-Meshkov Instability (RMI), and a separate experimental campaign focused on the influence of varying the period of time between the arrival of the incident shock and the second shock (reshock) on the post-reshock RMI behavior. Diagnostics have primarily consisted of laser-based Particle Image Velocimetry (PIV), with a handful of experiments utilizing a Mie scattering diagnostic.<br>
 						</div>
 					</div><hr>
 					<div class='section-split'>
@@ -111,10 +122,34 @@
 					<div class='section-title'>Technical Skills</div>
 				</div>
 				<div class='section-content'>
-					<ul>
-						<li>Various programming languages, including Julia, Python, C, C++, Cocoa, Swift, Matlab, HTML, and Javascript</li>
-						<li>Some other stuff here</li>
-						<li>Sometimes I even know what I'm doing</li>
+					<div class='section-split'>
+						<div class='section-split-left'>
+							Programming
+						</div>
+						<div class='section-split-right'>
+							Extensive programming experience over nearly 2 decades including several developed and released applications (see <a href="./projects.html">Projects</a> for more info).<br>Familiarity with a range of programming languages including but not limited to: Julia, Python, C, C++, Cocoa, Swift, MATLAB, HTML, Javascript, Bash, and others.
+						</div>
+					</div><hr>
+					<div class='section-split'>
+						<div class='section-split-left'>
+							HPC &amp Simulation
+						</div>
+						<div class='section-split-right'>
+							Experience in both utilizing high performance computing environments for simulation as well as development of codes to utilize HPC resources (OpenMP/OpenMPI, OpenCL).<br>
+							Experience with various simulation codes in both single-node and massively parallel environments, including Ares, MIRANDA, NASA OVERFLOW, RCAS, CASTRO, XFLR5/XFOIL, CMA-ES, and others.<br>
+							Ph.D minor in Applied Mathematics with focus on methods for analysis and validation of numerical methods for PDE integration, matrix inversion, conditioning, and filtering.
+						</div>
+					</div><hr>
+					<div class='section-split'>
+						<div class='section-split-left'>
+							Experimental Research
+						</div>
+						<div class='section-split-right'>
+							Extensive experience in development, construction, testing, and validation of experimental apparatus. The <a href='./projects.html'>Projects</a> page outlines several examples undertaken as part of the completion of my Masters and Ph.D degrees.<br>
+							Skills include real-work experience with engineering design principles, tolerancing, collaborative apparatus design, ascertaining and meeting design requirements, generation of technical drawings for machining, and part validation.<br>
+							Additional experience in gathering, catagorizing, filtering/post-processing, and analysis of potentially noisy experimental data. This includes verification of filtering techniques and outlier detection.
+						</div>
+					</div>
 				</div>
 			</li>
 			<li class='block-section'>
@@ -154,6 +189,11 @@
 				</div>
 			</li>
 		</ul>
+		<div id="printer-button">
+			<span id="print-button"><h6>Print as a PDF</h6></span>
+			<span id="printed-text"><h6>Generated from https://www.fergu.net. Contact info omitted to avoid scrapers and bots. Consider emailing me for a resume with full details. Please consider the environment before printing this as a physical copy &#127793</h6></span>
+		</div>
+	</div>
 	</div>
 	</div>
 	</body>
