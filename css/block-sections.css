@@ -18,6 +18,7 @@
 }
 .section-split-left {
 	width: 15%;
+	max-width: 175px;
 	border-right: 1px solid grey;
 	text-align: left;
 	padding-right: 0.25em;

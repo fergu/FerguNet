@@ -2,6 +2,7 @@
 	left: 0;
 	top: 0;
 	width: 20%;
+	max-width: 225px;
 	border-right: 1px grey solid;
 	padding-right: 1em;
 	display: flex;
