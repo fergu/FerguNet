@@ -9,6 +9,27 @@
 	flex-direction: column;
 }
 
+@media only screen and (max-width: 800px) {
+	#nav-bar {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	#nav-bar ul{
+		display: inline-block;
+	}
+
+	#nav-bar .indicator {
+		display: none;
+	}
+	.vert-spacer {
+		display: none;
+	}
+
+	#footer {
+		display: none;
+	}
+}
 
 #nav-bar h1,h2,h3,h4,h5,h6 {
 	margin: 0;

@@ -104,3 +104,14 @@
 		display: none;
 	}
 }
+
+@media only screen and (max-width: 800px) {
+	.section-split {
+		display: block;
+	}
+	.section-split-left {
+		max-width: 100%;
+		border-right: none;
+		border-bottom: 1px solid grey;
+	}
+}
