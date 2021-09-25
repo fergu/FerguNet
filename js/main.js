@@ -14,7 +14,7 @@ const navbar_html = `
 				</a>
 			</li>
 			<hr>
-			<li><a href='./about.html'>Resume</a></li>
+			<li><a href='./resume.html'>Resume/CV</a></li>
 			<li><a href='https://www.github.com/fergu' target="_blank">Github</a></li>
 			<li><a href='./projects.html'>Projects</a></li>
 			<li><a href='./contact.html'>Contact</a></li>
