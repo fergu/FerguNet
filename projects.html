@@ -45,14 +45,31 @@
 		<ul class='block-section-root'>
 			<li class='block-section'>
 				<div class='section-handle' onclick='toggle_section(this.parentElement)'>
+					<div class='section-title'>Ph.D Dissertation: Dual Driver Vertical Shock Tube (January 2016 - May 2022 (Expected)</div>
+				</div>
+				<div class='section-content'>
+					<div>
+						<img src="img/ddvst.png" height="300" style="border: 3px solid black; float: right; margin: 5px;"></img>
+					</div>
+					Novel shock-tube design utilizing two vertically opposed shock tube driver and driven sections located on opposite ends of a test section.<br>
+					Optimized for longest possible post-reshock growth period following reshock. Optimization performed using LibCMA-ES genetic optimization library coupled to a method of characteristics solver. LibCMA-ES developed by Benez (<a href="https://github.com/CMA-ES/libcmaes">Github</a>), coupling and simulation code developed in house.<p>
+					Designed, constructed, tested, and utilized by me for my Ph.D research, with acknowledgement to all members of the Fluid Mechanics and Instability lab for design and construction assistance, especially Matthew Mokler. Substantial fabrication and machining assistance from the AME machine shop.<p>
+					See citations listed under Talks and Presentations on my <a href="resume.html">resume</a> for information on collected data and more detailed design discussion.
+				</div>
+			</li>
+			<li class='block-section'>
+				<div class='section-handle' onclick='toggle_section(this.parentElement)'>
 					<div class='section-title'>Masters Thesis: 3D Imaging Apparatus (August 2012 to May 2014)</div>
 				</div>
 				<div class='section-content'>
-					Created as part of my work on my Masters Thesis in Aerospace Engineering at the University of Arizona.<br>
-					Goal: design and implement a mechanism to capture the initial conditions of the <a href="https://en.wikipedia.org/wiki/Richtmyer%E2%80%93Meshkov_instability">Richtmyer-Meshkov fluid instability</a> (RMI) prior to shock wave arrival.<br>
-					Accomplished using a device known as a <a href="https://en.wikipedia.org/wiki/Galvanometer">Galvanometer</a> with attached mirrors, combined with an Arduino Mega and 8-bit DAC with custom-designed PCB for current control.<br>
-					Demonstrated successfully and used to capture several experiments, which were then used for computational simulations of the instability.<br>
-					Subsequent improvements in the form of faster galvanometers and better mirror coatings have further improved results.<br>
+					<div>
+						<img src="img/galvo.jpg" width="200" style="border: 3px solid black; float: right; margin: 5px;"></img>
+					</div>
+					Created as part of my work on my Masters Thesis in Aerospace Engineering at the University of Arizona.<p>
+					Goal: design and implement a mechanism to capture the initial conditions of the <a href="https://en.wikipedia.org/wiki/Richtmyer%E2%80%93Meshkov_instability">Richtmyer-Meshkov fluid instability</a> (RMI) prior to shock wave arrival.<p>
+					Accomplished using a device known as a <a href="https://en.wikipedia.org/wiki/Galvanometer">Galvanometer</a> with attached mirrors, combined with an Arduino Mega and 8-bit DAC with custom-designed PCB for current control.<p>
+					Demonstrated successfully and used to capture several experiments, which were then used for computational simulations of the instability.<p>
+					Subsequent improvements in the form of faster galvanometers and better mirror coatings have further improved results.
 				</div>
 			</li>
 			<li class='block-section'>
@@ -60,6 +77,9 @@
 					<div class='section-title'>Senior Capstone Design: Joined Wing UAV (August 2011 to May 2012)</div>
 				</div>
 				<div class='section-content'>
+					<div>
+						<img src="img/joinedwing.jpg" width="200" style="border: 3px solid black; float: right; margin: 5px;"></img>
+					</div>
 					Created to satisfy requirements of the senior capstone design project, required for graduation from the University of Arizona's Aerospace Engineering program<br>
 					Chief Responsibilities: Team Lead and Aircraft Aerodynamic Design and planform sizing<br>
 					Goal: Design and construct an unmanned aerial vehicle with a <a href="https://en.wikipedia.org/wiki/Closed_wing">Joined Wing</a> design, featuring a continuous loop between the primary and secondary lifting surfaces<br>
@@ -96,6 +116,16 @@
 				</div>
 				<div class='section-content'>
 					This website was designed and built by me from the ground up using HTML, CSS, and Javascript. The primary goal was just to gain the experience of building a website and to see if it was something I chould achieve. The site is hosted via Github Pages.
+				</div>
+			</li>
+			<li class='block-section'>
+				<div class='section-handle' onclick='toggle_section(this.parentElement)'>
+					<div class='section-title'>Javascript Wind Tunnel</div>
+				</div>
+				<div class='section-content'>
+					<a href="https://fergu.github.io/WindTunnel/" target="_blank">Check it out!</a><p>
+					A simple website that solves the potential flow equations for 2D flow around a cylinder and then utilizes a conformal mapping technique to map the result to flow around an airfoil at an arbitrary angle of attack. Designed primarily as a visualization tool to to help younger audiences visualize the flow around a wing.<p>
+					Further improvements are in progress. Eventual goal is to implement a GPU shader-based simulation of the Navier-Stokes equations for this same physical configuration to make the resulting flow visualization both look and behave more realistically, including boundary layers, flow separation, etc. For example, see <a href="https://haxiomic.github.io/GPU-Fluid-Experiments/html5/" target="_blank">Haxiomic's GPU Fluids Simulation</a>.
 				</div>
 			</li>
 		</ul>
