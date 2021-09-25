@@ -72,7 +72,10 @@ a:visited {
 		background-color: white;
 		text-color: black;
 	}
-
+	a {
+		color: black;
+		text-decoration: none;
+	}
 	#body-text {
 		font-size: 12pt;
 	}
