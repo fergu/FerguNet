@@ -5,6 +5,27 @@ html, body{
     background-color: GhostWhite;
 }
 
+a {
+	color: black;
+}
+
+a:visited {
+	color: black;
+}
+@media (prefers-color-scheme: dark) {
+	html,body {
+		background-color: black;
+		color: GhostWhite;
+	}
+
+	a {
+		color: white;
+	}
+
+	a:visited {
+		color: white;
+	}
+}
 #body-text {
 	display: flex;
 	font-size: 1em;
@@ -31,7 +52,6 @@ html, body{
     position: relative;
 	text-decoration: none;
 	font-weight: bold;
-	color: black;
 	padding: 0.5em;
 }
 
@@ -50,6 +70,7 @@ html, body{
 @media print {
 	html, body {
 		background-color: white;
+		text-color: black;
 	}
 
 	#body-text {
