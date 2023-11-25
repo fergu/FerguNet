@@ -1,40 +1,54 @@
-.block-section-root {
-	list-style-type: none;	
-	padding: 0;
-	margin: 0;
-	overflow-x: wrap;
+/* Block section elements style */
+
+.block-section {
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
-.block-section-root li {
-	padding: 0.5em;
-	padding-left: 0;
-	margin: 0.5em;
-	margin-left: 0;
+.block-section-title {
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+}
+.block-section-content {
+	height: 0;
+	overflow-y: hidden;
+	padding-left: 4em;
+	padding-right: 8em;
 }
 
-.section-split {
+.block-section.open .block-section-content {
+	height: auto;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+}
+
+/* The div element that splits block sections into left/right */
+.block-section-content-split {
 	width: 100%;
 	display: flex;
 }
-.section-split-left {
+
+.block-section-content-split-left {
 	width: 15%;
 	max-width: 175px;
-	border-right: 1px solid grey;
+	border-right: 1px solid black;
 	text-align: left;
 	padding-right: 0.25em;
 }
-.section-split-right {
+.block-section-content-split-right {
 	padding-left: 1em;
 	flex: 1;
+	overflow-x: wrap;
 }
 
-.section-handle {
+/* Styling for the open/close button for each block section */
+.block-section-handle {
 	font-size: 14pt;
 	display: flex;
 	line-height: 1em;
 }
 
-.section-handle-button {
+.block-section-handle-button {
 	width: 1em;
 	min-width: 1em;
 	height: 1em;
@@ -49,70 +63,27 @@
 	background-color: gray;
 }
 
-.section-handle-button span {
+.block-section-handle-button span {
 	position: absolute;
 	background: white;
 	transition: 200ms;
 	border-radius: 2px;
 }
 
-.block-section.open .section-handle-button span {
-	transform: rotate(45deg);
-}
-
-.section-handle-button span.vert {
+.block-section-handle-button span.vert {
 	top: 25%;
 	bottom: 25%;
 	width: 10%;
 	left: 45%;
 }
 
-.section-handle-button span.horz {
+.block-section-handle-button span.horz {
 	left: 25%;
 	right: 25%;
 	height: 10%;
 	top: 45%;
 }
 
-
-.section-content {
-	height: 0;
-	overflow-y: hidden;
-	padding-left: 4em;
-}
-
-.block-section.open .section-content {
-	height: auto;
-	padding-bottom: 0.5em;
-	padding-top: 0.5em;
-}
-
-@media print {
-	.block-section .section-content {
-		height: auto;
-		padding-bottom: 0.5em;
-		padding-top: 0.5em;
-		padding-left: 0;
-		font-size: 10pt;
-	}
-
-	.block-section .section-handle {
-		font-size: 12pt;
-	}
-
-	.section-handle-button {
-		display: none;
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	.section-split {
-		display: block;
-	}
-	.section-split-left {
-		max-width: 100%;
-		width: 100%;
-		border-right: none;
-		border-bottom: 1px solid grey;
-	}
+.block-section.open .block-section-handle-button span {
+	transform: rotate(45deg);
 }

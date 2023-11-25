@@ -1,9 +1,43 @@
-html, body{
-	max-width: 1600px;
+html {
+	
+}
+
+body {
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
-    background-color: GhostWhite;
+    font-family: 'Source Sans 3', sans-serif;
+	background-image: url("../img/storm_sat_small.jpeg");
+	background-color: GhostWhite;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+header {
+	margin: auto;
+	padding: 10px;
+	font-size: 72pt;
+	border-top: 1pt solid black;
+	border-bottom: 1pt solid black;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	font-weight: bold;
+}
+
+footer {
+	color: GhostWhite;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	border-top: 1px solid GhostWhite;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-size: 0.8em;
+	margin: auto;
+	padding: 0.7em 2em 0.7em 2em;
+	text-align: center;
+	background-color: rgba(255,255,255,0.25);
+	flex: 0 0 auto;
 }
 
 a {
@@ -13,90 +47,82 @@ a {
 a:visited {
 	color: black;
 }
-@media (prefers-color-scheme: dark) {
-	html,body {
-		background-color: black;
-		color: GhostWhite;
-	}
 
-	a {
-		color: white;
-	}
-
-	a:visited {
-		color: white;
-	}
-}
-#body-text {
+#content {
 	display: flex;
-	font-size: 1em;
-	left: 0; right: 0;
-	bottom: 0;
-	min-height: calc(100% - 1.4em);
-	margin: 0.7em;
-	text-align: left;
+	flex-flow: column;
+	height: 100%;
+	max-height: 100%;
 }
 
-@media only screen and (max-width: 800px) {
-	#body-text {
-		display: block;
-	}
-}
-#body-right {
-	flex: 1;
-	padding-left: 1em;
-	left: 0;
-	top: 0;
-}
-
-#body-right h1,h2,h3,h4,h5,h6 {
+#main {
 	margin: 0;
+	padding: 3em 0 2em 0;
+	width: 100%;
+	flex: 1 1 auto;
+}
+
+#body-text {
+	width: 80%;
+	margin: 0em auto 0em auto;
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: rgba(255, 255, 255, 0.25);
+	border-top: 1px solid GhostWhite;
+	border-bottom: 1px solid GhostWhite;
+	color: black;
+	border-radius: 10px;
+	font-size: 1em;
+	text-align: left;
+	transition: background-color 100ms linear;
+}
+
+#body-text:hover {
+	background-color: rgba(255, 255, 255, 0.75);
 }
 
 .body-title {
 	display: block;
-    position: relative;
 	text-decoration: none;
 	font-weight: bold;
 	padding: 0.5em;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.2rem;
 }
 
 .body-content {
 
 }
 
-.body-title #named-span {
-	display: none;
+/* These are formatting for the 'tag cloud' style lists */
+.block-list {
+	list-style-type: none;
+	line-height: 3em;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 0;
+	margin-right: 0;
 }
 
-#printer-button #printed-text {
-	display: none;
+.block-list li {
+	background-color: none;
+	border-radius: 8px;
+	border: 1px solid black;
+	margin: 10px;
+	padding: 10px;
+	display: inline;
+	white-space: nowrap;
 }
 
-
-@media print {
-	html, body {
-		background-color: white;
-		text-color: black;
-	}
-	a {
-		color: black;
-		text-decoration: none;
-	}
-	#body-text {
-		font-size: 12pt;
-	}
-	.body-title #styled-span {
-		display: none;
-	}
-	.body-title #named-span {
-		display: inline;
-	}
-
-	#printer-button #print-button {
-		display: none;
-	}
-	#printer-button #printed-text {
-		display: inline;
-	}
+/* ITEMS FOR THE HOME PAGE */
+#home-content {
+	margin: auto;
+	margin-top: 2em;
+	padding: 10px;
+	border-top: 1pt solid black;
+	border-bottom: 1pt solid black;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
 }

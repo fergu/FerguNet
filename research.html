@@ -1,0 +1,171 @@
+<html>
+	<title>FerguNet</title>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200&display=swap" rel="stylesheet">
+		<link href='css/main.css' rel='stylesheet' type='text/css'>
+		<link href='css/navbar.css' rel='stylesheet' type='text/css'>
+		<link href='css/block-sections.css' rel='stylesheet' type='text/css'>
+		<script src='js/main.js'></script>
+	</head>
+	<body>
+		<template id='block-section-handle-template'>
+			<div class='block-section-handle-button'>
+				<span class='vert'></span>
+				<span class='horz'></span>
+			</div>
+		</template>
+		<div id='content'>
+			<nav id='nav-bar'></nav>
+			<header>Research</header>
+			<div id='main'>
+				<div id='body-text'>
+					<!-- Main section header -->
+					<div class='body-content'>
+						<!-- RESEARCH INTERESTS -->
+						<div class='block-section'>
+							<div class='block-section-handle' onclick='toggle_section(this.parentElement)'>
+								<div class='block-section-title'>Research Interests</div>
+							</div>
+							<div class='block-section-content'>
+								My research interests can be most broadly summarized as a general interest in the fields of fluid mechanics and turbulence. I have existing experience in both experimental and computational techniques for studying turbulent flows, and I am interested in expanding upon this experience to branch in to fields of interest to me. The following sections provide a more in-depth view of these fields of interest and what I aim to accomplish within them.<p>
+								<!-- Geophysical fluid mechanics -->
+								<div class='block-section-content-split'>
+									<div class='block-section-content-split-left'>
+										Geophysical Fluid Mechanics &amp Atmospheric Turbulence
+									</div>
+									<div class='block-section-content-split-right'>
+										My interests here are fairly broad, but can be generally summarized as an interest in the role of turbulence in atmospheric phenominea. In particular, I am interested in the role of turbulence in meteorological processes such as cloud formation and storm genesis, as well as how local conditions such as ground cover, the presence of lakes, oceans, and vegetation, as well as other surface properties and their history influence observations. I am interested in both laboratory-scale experiments and full-scale field measurements to perform these studies, as well as the comparisons between these experiments and numerical simulation results.
+									</div>
+								</div><hr>
+								<!-- Experiments -->
+								<div class='block-section-content-split'>
+									<div class='block-section-content-split-left'>
+										Experimental Diagnostic Development
+									</div>
+									<div class='block-section-content-split-right'>
+										Acquisition of high quality, high fidelity experimental data is useful in numerous contexts, from measurement of real-world flow processes to data suitable for simulation validation. Unfortunately, this data is often subject to limited resolution, high noise levels, and measurement uncertainty, complicating the usefulness of this information. In addition, the sensors used to take these measurements are often prohibitively expensive, further complicating data acquisition. I am interested in the design and development of new experimental analysis methods, sensors, and techniques with the hope of improving the types, quantities, and quality of experimental data that can be acquired. I am particularly interested in non-invasisive in-situ measurements, as well as the development of low-cost sensing tools.
+									</div>
+								</div><hr>
+								<!-- Machine Learning -->
+								<div class='block-section-content-split'>
+									<div class='block-section-content-split-left'>
+										Machine Learning in Fluid Mechanics
+									</div>
+									<div class='block-section-content-split-right'>
+										The rise of artificial intelligence, machine learning, and neural networks in the last several years has been hard to miss. While tools such as ChatGPT have been most evident to the general public, there also appears to be substantial interest in the application of these tools to topics of scientific relevance. My interests here are largely related to the application of physics-informed machine learning to experimental data with the hope of exploring the development of predictive turbulence models.
+									</div>
+								</div><hr>
+								<!-- Open Source Development -->
+								<div class='block-section-content-split'>
+									<div class='block-section-content-split-left'>
+										Open Source Collaboration &amp Development
+									</div>
+									<div class='block-section-content-split-right'>
+										I am interested in the development and use of standardized scientific data formats as this facilitates open data exchange, results verification, and simplifies the process of building upon existing data. While there are a great many standardized formats that are suitable for scientific data, ranging from simple comma-separated variable files to more complicated <a href="https://en.wikipedia.org/wiki/Hierarchical_Data_Format">HDF5</a> files, the schemas used to store (and interpret) this data is far from standardized in the scientific community. This often results in difficulty interpreting existing data when shared between groups or even individual researchers. It is my hope to develop libraries to facilitate standard methods for data storage and interpretation. In particular, I am interested in defining standardized data structures for use in the HDF5 format, and developing libraries in multiple languages to make this schema easy to interpret for other scientists.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- SKILLS AND EXPERIENCE -->
+						<div class='block-section'>
+							<div class='block-section-handle' onclick='toggle_section(this.parentElement)'>
+								<div class='block-section-title'>Skills and Experience</div>
+							</div>
+							<div class='block-section-content'>
+								This is a general overview of the skills and experience I have gained over the course of my career. This should be considered far from complete, but it should hopefully be enough to give a sense of my existing skillset and abilities. The following sections should be considered like a word-cloud of skills and attributes that can be assigned to me.<p>
+								<!-- Experimental research -->
+								<div class='block-section-content-split'>
+									<div class='block-section-content-split-left'>
+										Subject Fields
+									</div>
+									<div class='block-section-content-split-right'>
+										These are fields of reasearch that I have gained experience with over my career
+										<ul class='block-list'>
+											<li>Turbulence</li>
+											<li>Turbulent Mixing</li>
+											<li>Shock Tubes</li>
+											<li>Richtmyer-Meshkov Instability</li>
+											<li>Rayleigh-Taylor Instability</li>
+										</ul>
+									</div>
+								</div><hr>
+								<!-- Experimental research -->
+								<div class='block-section-content-split'>
+									<div class='block-section-content-split-left'>
+										Experimental Research
+									</div>
+									<div class='block-section-content-split-right'>
+										Skills that I have developed related to conducting, processing, and analyzing experimental data.
+										<ul class='block-list'>
+											<li>Experiment Design</li>
+											<li>Mechanical Design</li>
+											<li>Design Tolerancing</li>
+											<li>Particle Image Velocimetry</li>
+											<li>Noise reduction</li>
+											<li>Laser-based diagnostics</li>
+											<li>Machine Shop</li>
+											<li>Circuit design</li>
+											<li>Arduino</li>
+											<li>Uncertainty Quantification</li>
+											<li>Uncertainty Propagation</li>
+										</ul>
+									</div>
+								</div><hr>
+								<!-- Programming -->
+								<div class='block-section-content-split'>
+									<div class='block-section-content-split-left'>
+										Programming
+									</div>
+									<div class='block-section-content-split-right'>
+										Various programming languages and libarires that I am familiar with.
+										<ul class='block-list'>
+											<li>Julia</li>
+											<li>DataFrames.jl</li>
+											<li>Python</li>
+											<li>Pandas</li>
+											<li>Numpy/Scipy</li>
+											<li>HDF5</li>
+											<li>NetCDF</li>
+											<li>LaTeX</li>
+											<li>C</li>
+											<li>C++</li>
+											<li>Cocoa</li>
+											<li>Swift</li>
+											<li>MATLAB/Octave</li>
+											<li>HTML</li>
+											<li>Javascript</li>
+											<li>Bash</li>
+										</ul>
+									</div>
+								</div><hr>
+								<!-- HPC & Simulation -->
+								<div class='block-section-content-split'>
+									<div class='block-section-content-split-left'>
+										HPC &amp Simulation
+									</div>
+									<div class='block-section-content-split-right'>
+										Codes, libraries, and techniques related to research and analysis conducted using high performance computing resources.
+										<ul class='block-list'>
+											<li><a href="https://e3sm.org">DOE E3SM</a></li>
+											<li>OpenMP</li>
+											<li>OpenMPI</li>
+											<li>OpenCL</li>
+											<li>CMA-ES</li>
+											<li>VisIt</li>
+											<li>Large scale simulation</li>
+											<li>GPU Acceleration</li>
+										</ul><p>
+										Additionally, I hold a Ph.D minor in Applied Mathematics with focus on methods for analysis and validation of numerical methods for PDE integration, matrix inversion, conditioning, and filtering.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer id="footer"></footer>
+		</div>
+	</body>
+</html>
