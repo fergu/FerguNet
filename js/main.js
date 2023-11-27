@@ -20,7 +20,7 @@ window.onload = function() {
 		navbar_html += "<li><a href='index.html'>Home</a></li>"
 		navbar_html += "<li><a href='research.html'>Research</a></li>"
 		navbar_html += "<li><a href='publications.html'>Publications</a></li>"
-		navbar_html += "<li><a href='experience.html'>Education &amp Experience</a></li>"
+		navbar_html += "<li><a href='experience.html'>Education &amp Employment</a></li>"
 		navbar_html += "<li class=\"no-hover\" style=\"flex: 1\"></li>"
 		navbar_html += "<li class=\"no-hover\"> \
 			<a href='https://www.github.com/fergu' target=\"_blank\"><img src='img/github-mark.svg' style=\"height: 24px;\" title=\"Github\" alt=\"Github\"></a> \
